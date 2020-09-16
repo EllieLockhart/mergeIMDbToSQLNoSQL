@@ -1,8 +1,25 @@
+# since the IMDb source files are proprietary (but freely
+# available), this file prevents them from being merged
+# into the public GIT repository, which is subject to
+# an open source license
 
-imdbDataFilesPreMerge/title.ratings.tsv
-imdbDataFilesPreMerge/name.basics.tsv
-imdbDataFilesPreMerge/title.akas.tsv
-imdbDataFilesPreMerge/title.basics.tsv
-imdbDataFilesPreMerge/title.crew.tsv
-imdbDataFilesPreMerge/title.episode.tsv
-imdbDataFilesPreMerge/title.principals.tsv
+# as of September 20, 2020, the data can be retrieved from
+# https://www.imdb.com/interfaces/ and
+# https://datasets.imdbws.com/
+
+# the specific files that need to be downloaded
+# to make these scripts work are located at the following
+# URLs:
+# https://datasets.imdbws.com/name.basics.tsv.gz
+# https://datasets.imdbws.com/title.akas.tsv.gz
+# https://datasets.imdbws.com/title.basics.tsv.gz
+# https://datasets.imdbws.com/title.crew.tsv.gz
+# https://datasets.imdbws.com/title.episode.tsv.gz
+# https://datasets.imdbws.com/title.principals.tsv.gz
+# https://datasets.imdbws.com/title.ratings.tsv.gz
+
+# these datasets are updated regularly, so providing them
+# along with the project wouldn't make sense in any case
+
+*.tsv
+*.gzs
