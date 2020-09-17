@@ -21,7 +21,7 @@ the /imdbDataFilesPreMerge directory, or running this
 script outside of the directory in which it resides by
 default, will definitely result in a script failure! */
 
-CREATE TABLE titleInformation_premerge (
+/*CREATE TABLE titleInformation_premerge (
   id                CHARACTER VARYING(50),
   ordering          integer,
   title             text,
@@ -31,6 +31,7 @@ CREATE TABLE titleInformation_premerge (
   attributes        text [],
   isOriginalTitle   bool,
   PRIMARY KEY (id)
-  )
+  ) */
 
-COPY titleInformation_premerge FROM './imdbDataFilesPreMerge/title.basics.tsv' DELIMITER '\t'
+-- need to use the exact path for your system
+COPY titleInformation_premerge FROM '/home/Ellie/Documents/GitHub/mergeIMDbToSQLNoSQL/imdbDataFilesPreMerge/title.basics.tsv' DELIMITER E'\t';
