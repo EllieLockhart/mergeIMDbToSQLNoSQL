@@ -32,3 +32,5 @@ CREATE TABLE titleInformation_premerge (
   isOriginalTitle   bool,
   PRIMARY KEY (id)
   )
+
+COPY titleInformation_premerge FROM './imdbDataFilesPreMerge/title.basics.tsv' DELIMITER '\t'
